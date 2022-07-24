@@ -23,3 +23,54 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("forEachContactItem", (assertionFn) => {
+  cy.findByTestId("contact-list").within(() =>
+    cy.get("li").each((contact) => cy.wrap(contact).within(assertionFn)),
+  );
+});
+
+Cypress.Commands.add("getDetailProvinces", (element, category) => {
+  cy.findByRole("combobox", { name: element }).select(category);
+  cy.findAllByText(category)
+    .eq(1)
+    .parent()
+    .parent()
+    .children("a")
+    .should("have.attr", "href");
+});
+
+Cypress.Commands.add("getAllContact", (element, category, href) => {
+  cy.findByRole("combobox", { name: element }).select(category);
+  cy.findAllByText(category).should("not.have.length", 0);
+  cy.url().should("include", href);
+});
+
+Cypress.Commands.add(
+  "getAllContactWithStatus",
+  (element, category, href, title) => {
+    cy.findByRole("combobox", { name: element }).select(category);
+    cy.findAllByText(title).should("not.have.length", 0);
+    cy.url().should("include", href);
+  },
+);
+
+Cypress.Commands.add(
+  "getDescriptionContact",
+  (element, category, link, heading, description) => {
+    cy.findByRole("combobox", { name: element }).select(category);
+    cy.findAllByRole("link", {
+      name: link,
+    })
+      .first()
+      .click();
+    cy.findByRole("heading", {
+      name: heading,
+    }).should("contains", heading);
+    cy.findByText(description).should("exist");
+    cy.findByText("Status Verifikasi")
+      .parent()
+      .findByText("Terverifikasi")
+      .should("contain.text", "Terverifikasi");
+  },
+);
