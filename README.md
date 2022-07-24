@@ -3,7 +3,7 @@
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-46-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-50-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
@@ -35,6 +35,12 @@ Our website must be accessible so that we can reach more users and help more peo
 #### ✅ Up-to-date Information
 
 Any information posted on our website must be up-to-date to the latest version that our content editors published. We can tolerate delays to a certain degree for the sake of web performance, but it should be limited to less than an hour.
+
+#### ✅ Iterative, Incremental Changes
+
+Software development is **complex, cognitive work**. The simpler we can make something, then generally the easier it is to do. Similarly, the less amount of moving parts a software component has, the less prone it is to errors, and the less maintenance burden it gives us.
+
+One of the simplest ways to reduce complexity is to reduce the scope. We can often postpone the less valuable parts of a large issue and do them later in order to get the most valuable parts into our user's hands faster.
 
 > What we're going against:
 
@@ -190,6 +196,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://albarranaufala.github.io/albarra-portfolio"><img src="https://avatars.githubusercontent.com/u/54704525?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Albarra Naufala Erdanto</b></sub></a><br /><a href="https://github.com/kawalcovid19/wargabantuwarga.com/issues?q=author%3Aalbarranaufala" title="Bug reports">🐛</a> <a href="https://github.com/kawalcovid19/wargabantuwarga.com/commits?author=albarranaufala" title="Code">💻</a></td>
     <td align="center"><a href="http://adibfirman.github.io"><img src="https://avatars.githubusercontent.com/u/24794196?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adib Firman</b></sub></a><br /><a href="https://github.com/kawalcovid19/wargabantuwarga.com/commits?author=adibfirman" title="Tests">⚠️</a></td>
     <td align="center"><a href="https://github.com/ranggarppb"><img src="https://avatars.githubusercontent.com/u/44335152?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rangga Putra Pertama</b></sub></a><br /><a href="#tool-ranggarppb" title="Tools">🔧</a></td>
+    <td align="center"><a href="https://wisesa.dev"><img src="https://avatars.githubusercontent.com/u/35674157?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anvaqta Tangguh Wisesa</b></sub></a><br /><a href="https://github.com/kawalcovid19/wargabantuwarga.com/commits?author=svspicious" title="Code">💻</a></td>
+    <td align="center"><a href="https://behance.net/afifalfiano"><img src="https://avatars.githubusercontent.com/u/47497276?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Afif Alfiano</b></sub></a><br /><a href="https://github.com/kawalcovid19/wargabantuwarga.com/commits?author=afifalfiano" title="Tests">⚠️</a></td>
+    <td align="center"><a href="http://zakiego.my.id"><img src="https://avatars.githubusercontent.com/u/78015359?v=4?s=100" width="100px;" alt=""/><br /><sub><b>M. Zakiyuddin Munziri</b></sub></a><br /><a href="https://github.com/kawalcovid19/wargabantuwarga.com/commits?author=zakiego" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/FortressValkyrie"><img src="https://avatars.githubusercontent.com/u/66000635?v=4?s=100" width="100px;" alt=""/><br /><sub><b>FortressValkyrie</b></sub></a><br /><a href="https://github.com/kawalcovid19/wargabantuwarga.com/commits?author=FortressValkyrie" title="Code">💻</a> <a href="https://github.com/kawalcovid19/wargabantuwarga.com/commits?author=FortressValkyrie" title="Tests">⚠️</a></td>
   </tr>
 </table>
 
