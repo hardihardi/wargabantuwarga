@@ -29,7 +29,8 @@ const securityHeaders = [
     value: "nosniff",
   },
   // Disables camera, microphone, and geolocation.
-  // `interest-cohort=()` opts the website out of Google's FLoC: https://amifloced.org/
+  // `interest-cohort=()` opts the website out of Google's FLoC:
+  // https://amifloced.org/
   {
     key: "Permissions-Policy",
     value: "camera=(), microphone=(), geolocation=(), interest-cohort=()",
@@ -53,8 +54,10 @@ module.exports = withPWA(
       strictPostcssConfiguration: true,
     },
 
-    // This config won't be loaded until Netlify supports the `headers` option on `next.config.js`.
-    // For now, when you make changes here, also make the necessary changes on `netlify.toml`.
+    // This config won't be loaded until Netlify supports the `headers` option
+    // on `next.config.js`.
+    // For now, when you make changes here, also make the necessary changes on
+    // `netlify.toml`.
     // https://github.com/netlify/netlify-plugin-nextjs/issues/150
     headers: async () => {
       return [
